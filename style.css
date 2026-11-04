@@ -1,0 +1,82 @@
+:root {
+  --bg: #fff6f8;
+  --ink: #4a3540;
+  --muted: #8a7480;
+  --pink: #f27a9b;
+  --pink-deep: #d9577d;
+  --green: #7cc59a;
+  --card: #ffffff;
+  --line: #f3d6df;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Yu Gothic UI", "Meiryo", system-ui, sans-serif;
+  line-height: 1.75;
+}
+a { color: var(--pink-deep); }
+.hero {
+  text-align: center;
+  padding: 40px 20px 28px;
+  background: linear-gradient(180deg, #ffe3ec 0%, #e8f7ee 100%);
+}
+.logo { width: min(520px, 90%); height: auto; }
+.catch { font-size: 1.25rem; font-weight: 700; margin: 12px 0 20px; }
+.buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 2px solid var(--pink);
+  background: #fff;
+  color: var(--pink-deep);
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn.primary { background: var(--pink); color: #fff; }
+.btn:hover { filter: brightness(1.05); }
+.note { color: var(--muted); font-size: 0.9rem; margin-top: 12px; }
+main { max-width: 960px; margin: 0 auto; padding: 24px 16px 40px; }
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.shots figure { margin: 0; }
+.shots img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 14px rgba(217, 87, 125, 0.18);
+}
+.shots figcaption { text-align: center; font-size: 0.9rem; color: var(--muted); }
+.card {
+  background: var(--card);
+  border: 2px solid var(--line);
+  border-radius: 18px;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+}
+.card h2 { margin: 0 0 8px; font-size: 1.2rem; color: var(--pink-deep); }
+.card li { margin: 4px 0; }
+.small { font-size: 0.9rem; color: var(--muted); }
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.policy { max-width: 760px; margin: 0 auto; padding: 32px 18px 48px; }
+.policy h1 { font-size: 1.5rem; }
+.policy h2 { font-size: 1.1rem; margin-top: 28px; color: var(--pink-deep); }
+.policy table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+.policy th, .policy td { border: 1px solid var(--line); padding: 8px; text-align: left; vertical-align: top; background: #fff; }
+.policy th { background: #ffeef3; }
